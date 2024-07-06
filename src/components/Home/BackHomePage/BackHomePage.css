@@ -3,6 +3,8 @@
     gap: 20px;
     justify-content: center;
     margin-bottom: 40px; 
+    background-color: #F0F0F0;
+    height:70vh;
 }
 
 .card {
@@ -16,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #fff; 
+    background-color: #F0F0F0; 
 }
 
 .card-image {
@@ -39,7 +41,6 @@
 
 .description-container {
     text-align: left;
-    padding: 20px;
     padding-left: 100px;
     background-color: #E7473C;
     height:70vh;
