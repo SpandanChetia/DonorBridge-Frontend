@@ -1,0 +1,74 @@
+.main-cover-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.frontpage-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.frontpage-photo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(231, 71, 60, 0.2); 
+}
+
+.frontpage-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.frontpage-desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1; 
+}
+
+.desc1 {
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.desc2 {
+    display: block;
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+}
+
+.fund-button {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: #F0F0F0;
+    color: #262223; 
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+
+.fund-button:hover {
+    background-color: #F0F0F0; 
+}

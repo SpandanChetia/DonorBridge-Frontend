@@ -1,14 +1,18 @@
-import Coverpic from '.../assets/cover-pic.png'
+import React from 'react';
+import Coverpic from './cover-pic.png';
+import './FrontHomePage.css';
 
 export default function FrontHomePage() {
     return (
         <>
-            <span className="frontpage-photo"><img src={Coverpic} alt="cover-photo"/></span>
-            <div className="frontpage-desc">
-                <span className="desc1">A Crowdfunding Platform</span>
-                <span className="desc2">Help the People in Need</span>
+            <div className="main-cover-container">
+                <span className="frontpage-photo"><img src={Coverpic} alt="cover-photo"/></span>
+                <div className="frontpage-desc">
+                    <span className="desc1">A Crowdfunding Platform</span>
+                    <span className="desc2">Help the People in Need</span>
+                </div>
+                <button className="fund-button">Start a Fundraiser</button>
             </div>
-            <button className="fund-button">Start a Fundraiser</button>
         </>
     )
 }

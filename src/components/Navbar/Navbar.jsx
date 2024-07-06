@@ -1,4 +1,7 @@
-export default function Navbar({ page }) {
+import React from 'react';
+import './Navbar.css';
+
+export default function Navbar() {
     const buttonClass = 'button'; 
 
     return (
