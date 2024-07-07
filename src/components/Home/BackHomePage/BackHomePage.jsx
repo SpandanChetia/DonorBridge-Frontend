@@ -1,15 +1,6 @@
 import React from 'react';
+import Card from '../../Cards/Card';
 import './BackHomePage.css';
-
-function Card({ title, content, imageSrc, classname }) {
-    return (
-        <div className={classname}>
-            {imageSrc && <img src={imageSrc} alt={title} className="card-image" />}
-            <h3>{title}</h3>
-            <p>{content}</p>
-        </div>
-    );
-}
 
 export default function BackHomePage() {
     return (

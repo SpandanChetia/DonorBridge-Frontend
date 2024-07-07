@@ -1,15 +1,16 @@
 import React from "react";
 import { useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
-import Home from "./components/Home/Home";
-import Categories from "./components/Catagories/Categories";
+import FrontHomePage from "./components/Home/FrontHomePage/FrontHomePage";
+import BackHomePage from "./components/Home/BackHomePage/BackHomePage";
 
 function App() {
   const [activepage, setactivepage] = useState('home');
   return (
     <>
       <Navbar/>
-      <Home/>
+      <FrontHomePage />
+      <BackHomePage />
     </>
   );
 }

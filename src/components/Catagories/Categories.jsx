@@ -1,4 +1,4 @@
-import CategoryList from "./CategoryList.jsx";
+import categories from './categorylist.js';
 import "./Categories.css";
 export default function Categories() {
   return (
@@ -17,7 +17,14 @@ export default function Categories() {
           <button className="category-fund-button">Start a Fundraiser</button>
         </section>
         <section className="category-mid">
-          <CategoryList />
+          <ul>
+            {categories.map((category, index) => (
+              <li key={index} className="category-item">
+                <img src={category.imageSrc} alt={category.title} />
+                <span>{category.title}</span>
+              </li>
+            ))}
+          </ul>
         </section>
       </div>
     </>
