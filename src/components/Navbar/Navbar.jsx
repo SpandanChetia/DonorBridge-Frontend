@@ -9,7 +9,7 @@ export default function Navbar() {
             <div className="navbar">
                 <ul>
                     <li key="home">
-                        <span className="logo">BRIGHTFUND</span>
+                        <button className="logo">BRIGHTFUND</button>
                     </li>
                     <li key="donate">
                         <button className={buttonClass}>Donate</button>

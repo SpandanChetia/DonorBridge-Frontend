@@ -1,3 +1,11 @@
+.backpage-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #E7473C; /* Adjust as needed */
+    z-index: 2;
+}
+
 .card-container {
     display: flex;
     gap: 20px;

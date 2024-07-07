@@ -1,18 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Coverpic from './cover-pic.png';
 import './FrontHomePage.css';
 
 export default function FrontHomePage() {
-    return (
-        <>
-            <div className="main-cover-container">
-                <span className="frontpage-photo"><img src={Coverpic} alt="cover-photo"/></span>
-                <div className="frontpage-desc">
-                    <span className="desc1">A Crowdfunding Platform</span>
-                    <span className="desc2">Help the People in Need</span>
-                </div>
-                <button className="fund-button">Start a Fundraiser</button>
-            </div>
-        </>
-    )
+  return (
+    <>
+      <section className="main-cover-container">
+        <span className="frontpage-photo"><img src={Coverpic} alt="cover-photo"/></span>
+        <div className="frontpage-desc">
+          <span className="desc1">A Crowdfunding Platform</span>
+          <span className="desc2">Help the People in Need</span>
+        </div>
+        <button className="fund-button">Start a Fundraiser</button>
+      </section>
+    </>
+  );
 }
