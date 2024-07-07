@@ -9,35 +9,35 @@ const categories = [
     },
     { 
         title: 'Education', 
-        imageSrc: 'education-image.jpg' 
+        imageSrc: './img/education-image.jpg' 
     },
     { 
         title: 'Animal', 
-        imageSrc: 'animal-image.jpg' 
+        imageSrc: './img/animal-image.jpg' 
     },
     { 
         title: 'Environment', 
-        imageSrc: 'environment-image.jpg' 
+        imageSrc: './img/environment-image.jpg' 
     },
     { 
         title: 'Business', 
-        imageSrc: 'business-image.jpg' 
+        imageSrc: './img/business-image.jpg' 
     },
     { 
         title: 'Community', 
-        imageSrc: 'community-image.jpg' 
+        imageSrc: './img/community-image.jpg' 
     },
     { 
         title: 'Event', 
-        imageSrc: 'event-image.jpg' 
+        imageSrc: './img/event-image.jpg' 
     },
     { 
         title: 'Sport', 
-        imageSrc: 'sport-image.jpg' 
+        imageSrc: './img/sport-image.jpg' 
     },
     { 
         title: 'Family', 
-        imageSrc: 'family-image.jpg' 
+        imageSrc: './img/family-image.jpg' 
     }
 ];
 

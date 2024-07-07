@@ -1,3 +1,10 @@
+.advantages-container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
 .backpage-container {
     position: relative;
     width: 100vw;
@@ -10,16 +17,31 @@
     display: flex;
     gap: 20px;
     justify-content: center;
+    align-items: center;
     margin-bottom: 40px; 
     background-color: #F0F0F0;
     height:70vh;
 }
 
-.card {
-    width: 200px; 
-    height: 300px; 
-    border: 1px solid #ccc;
-    padding: 20px;
+.card1 {
+    width: 23rem;
+    height: 23rem; 
+    border: 1px solid #f0f0f0;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #F0F0F0; 
+}
+
+.card2 {
+    width: 15rem;
+    height: 15rem; 
+    border: 1px solid #f0f0f0;
+    padding: 3rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -48,23 +70,56 @@
 }
 
 .description-container {
+    display: flex;
+    flex-direction: column;
     text-align: left;
-    padding-left: 100px;
     background-color: #E7473C;
     height:70vh;
-    font-size:2rem
+    font-size:38.1972px;
+    font-weight:small
 }
 
-.Heading {
-    display: block;
-    font-size: 1.8em; 
-    margin-bottom: 20px; 
+.description-container h1 {
+    color: rgb(51, 51, 51);
+    font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
+    font-feature-settings: "liga", "ss08";
+    font-size: 3.5rem;
+    font-weight: 500;
+    height: 91.675px;
+    letter-spacing: -0.763944px;
+    line-height: 58px;
+    margin-block-end: 40px;
+    margin-block-start: 0px;
+    margin-bottom: 40px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 4rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    text-size-adjust: 100%;
+    text-wrap: pretty;
 }
 
-.Paragraph {
-    display: block;
-    font-size: 1.2em; 
-    margin-bottom: 20px; 
-    color: #333; 
+.description-container p {
+    color: rgb(51, 51, 51);
+    font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
+    font-feature-settings: "liga", "ss08";
+    font-size: 23.3991px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 35.0986px;
+    margin-block-end: 16px;
+    margin-block-start: 0px;
+    margin-bottom: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-top: 2rem;
+    tab-size: 4;
+    text-size-adjust: 100%;
+    text-wrap: pretty;
 }
 

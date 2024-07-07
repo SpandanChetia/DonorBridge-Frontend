@@ -8,7 +8,8 @@ function App() {
   const [activepage, setactivepage] = useState('home');
   return (
     <>
-      <Categories/>
+      <Navbar/>
+      <Home/>
     </>
   );
 }

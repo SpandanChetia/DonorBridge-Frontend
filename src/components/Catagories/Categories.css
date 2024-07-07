@@ -1,8 +1,8 @@
 .category-header {
     border-width: 0px;
     box-sizing: border-box;
-    color: rgb(51, 51, 51);
-    display: block;
+    display: flex;
+    flex-direction: column;
     font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
     font-feature-settings: "liga", "ss08";
     height: 420.875px;
@@ -11,6 +11,7 @@
     padding-top: 64px;
     tab-size: 4;
     text-size-adjust: 100%;
+    background-color: #F0F0F0;
 }
 
 .category-header h1 {
@@ -18,143 +19,119 @@
     border-right-width: 0px;
     border-top-width: 0px;
     box-sizing: border-box;
-    color: rgb(51, 51, 51);
+    color: #E7473C;
     display: block;
     font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
     font-feature-settings: "liga", "ss08";
     font-size: 76.892px;
     font-weight: 400;
     height: 153.775px;
-    letter-spacing: -3.8446px;
     line-height: 76.892px;
     margin-block-end: 24px;
     margin-block-start: 0px;
     margin-bottom: 24px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    margin-left: 0px;
+    padding-left: 12rem;
     margin-right: 0px;
     margin-top: 0px;
     tab-size: 4;
-    text-size-adjust: 100%;
-    text-wrap: balance;    
+    text-size-adjust: 100%; 
 }
 
 .category-header p {
     box-sizing: border-box;
-    color: rgb(51, 51, 51);
+    color: #e7473cb5;
     display: inline;
     font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
     font-feature-settings: "liga", "ss08";
+    font-size: 23.3991px;
     height: auto;
     line-height: 24px;
     margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
+    padding-left: 12rem;
     tab-size: 4;
     text-size-adjust: 100%;
 }
 
 .category-fund-button {
-    align-items: flex-start;
-    appearance: auto;
-    background-color: rgb(240, 240, 240);
-    border-bottom-color: rgb(0, 0, 0);
-    border-bottom-style: outset;
-    border-bottom-width: 1.6px;
+    align-items: center;
+    appearance: none;
+    background-color: #E7473C;
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-style: solid;
+    border-bottom-width: 0.8px;
     border-image-outset: 0;
     border-image-repeat: stretch;
     border-image-slice: 100%;
     border-image-source: none;
     border-image-width: 1;
-    border-left-color: rgb(0, 0, 0);
-    border-left-style: outset;
-    border-left-width: 1.6px;
-    border-right-color: rgb(0, 0, 0);
-    border-right-style: outset;
-    border-right-width: 1.6px;
-    border-top-color: rgb(0, 0, 0);
-    border-top-style: outset;
-    border-top-width: 1.6px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-left-style: solid;
+    border-left-width: 0.8px;
+    border-right-color: rgba(0, 0, 0, 0);
+    border-right-style: solid;
+    border-right-width: 0.8px;
+    border-top-color: rgba(0, 0, 0, 0);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-top-style: solid;
+    border-top-width: 0.8px;
     box-sizing: border-box;
-    color: rgb(0, 0, 0);
-    cursor: default;
-    display: inline-block;
-    font-family: Arial;
-    font-feature-settings: normal;
-    font-kerning: auto;
-    font-optical-sizing: auto;
-    font-size: 13.3333px;
-    font-stretch: 100%;
-    font-style: normal;
-    font-variant-alternates: normal;
-    font-variant-caps: normal;
-    font-variant-east-asian: normal;
-    font-variant-ligatures: normal;
-    font-variant-numeric: normal;
-    font-variant-position: normal;
-    font-variation-settings: normal;
-    font-weight: 400;
-    height: 19.2px;
-    letter-spacing: normal;
-    line-height: normal;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-bottom: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    tab-size: 4;
-    text-align: center;
-    text-indent: 0px;
-    text-rendering: auto;
-    text-shadow: none;
-    text-size-adjust: 100%;
-    text-transform: none;   
-}
-
-.category-list {
-    border-left-width: 0;
-    border-right-width: 0;
-    border-top-width: 0;
-    box-sizing: border-box;
-    color: rgb(51, 51, 51);
-    column-gap: 40px;
-    display: grid;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-flex;
     font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
     font-feature-settings: "liga", "ss08";
-    grid-template-columns: repeat(6, 1fr);
-    height: 732.013px;
-    line-height: 24px;
-    list-style-type: none;
-    margin-block-end: 0;
+    font-size: 16px;
+    font-weight: 700;
+    height: 48px;
+    justify-content: center;
+    line-height: 16px;
+    margin-left: 12rem;
+    margin-top: 4rem;
+    min-height: 48px;
+    max-width: 12rem;
+    tab-size: 4;
+}
+
+.category-main-container{
+    background-color: #f0f0f0;
+}
+
+.category-mid {
+    max-width: 80rem;
+    background-color: #f0f0f0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    grid-gap: 2rem;
+    margin: 2rem auto;
+    padding: 0;
+    list-style: none;
 }
 
 .category-item {
-    padding: 0; /* Reset padding */
+    text-align: center;
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .category-item img {
-    width: 100%; /* Ensure images fill their container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove any image alignment issues */
-    border-radius: 8px; /* Optional: add border radius for image */
+    width: 100%; 
+    height: auto;
+    display: block; 
+    border-radius: 8px 8px 0 0;
 }
 
-.category-item span {
-    display: block; /* Ensure span elements stack vertically */
-    margin-top: 8px; /* Add spacing between image and text */
-    text-align: center; /* Center align text */
+.category-item .category-title {
+    display: block; 
+    margin-top: 10px; 
+    font-weight: bold; 
 }
+
+
 
