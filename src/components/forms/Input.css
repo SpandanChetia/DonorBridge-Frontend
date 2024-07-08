@@ -3,32 +3,77 @@
 * {
   box-sizing: border-box;
 }
-body {
+
+.sign-in-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
     margin: 0;
     font-family: 'Lato', serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: linear-gradient(#d0d6d9, #b1b4ba);
-    color: #d9e2f1;
+    background-color: #f0f0f0;
+    color: #E7473C;
     min-height: 100vh;
-  }
+    font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
+    font-feature-settings: "liga", "ss08";
+}
 
+.sign-in-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height:5rem;
+    padding-right: 4rem;
+}
+
+.sign-in-header p{
+    font-weight: 50;
+    color: #303232;
+}
+.sideheader-sign-in{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 41rem;
+    background-color: #E7473C;
+    color : #f0f0f0
+}   
+
+.sideheader-sign-in h3 { 
+    padding-top: 11.6rem;
+    padding-left: 3rem;
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+.sideheader-sign-in h1 {
+    padding-top: 2rem;
+    padding-left: 3rem;
+    font-size: 2.4rem;
+    font-weight: 100;
+}
+
+.sign-in-form-container{
+    color:rgb(55, 54, 54);
+    width:80rem;
+    
+}
+
+.form-section{
+    display: flex;
+    flex-direction: column;
+    padding-left: 9rem;
+}
+
+.form-section h3{
+    margin-top: 10.2rem;
+    font-weight: 100;
+    border-radius: 60px 0 0 0;
+}
 form {
-  display: flex;
-  flex-direction: column;
-  min-height: 20rem;
-  width: 60%;
-  flex-wrap: wrap;
-  max-width: 40rem;
-  margin: 3rem auto;
-  padding: 2rem;
-  background: linear-gradient(180deg, #253c3c, #1d4949);
-  border-radius: 8px;
-  box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.5);
-  font-family: "Lato", serif;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-top: 3rem;
 }
 
 .control,
@@ -44,7 +89,7 @@ fieldset {
   display: block;
   font-size: 0.8rem;
   margin-bottom: 0.2rem;
-  color: #9bafaf;
+  color: #E7473C;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -52,12 +97,11 @@ fieldset {
 .control input {
   display: block;
   width: 100%;
-  max-width: 15rem;
-  padding: 0.5rem;
+  padding: 0.9rem;
   font-size: 1rem;
-  border-radius: 4px;
-  border: 1px solid #758a8a;
-  background-color: #869999;
+  border-radius: 13px;
+  border: 1px solid #E7473C;
+  background-color: #f0f0f0;
   color: #142020;
 }
 
@@ -90,11 +134,11 @@ fieldset {
   border-radius: 0;
   border: none;
   background-color: transparent;
-  color: #d9e2f1;
+  color: #f0f0f0;
 }
 
 .control-error {
-  color: #ffca99;
+  color: #d06500;
   font-size: 0.8rem;
   height: 2rem;
   padding: 0.5rem 0;
@@ -104,13 +148,10 @@ fieldset {
   margin: 0;
 }
 
-.control-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 1rem;
+.error-icon {
+    margin-left: 10px;
+    padding-right: 10px;
 }
-
 .form-actions {
   display: flex;
   justify-content: flex-end;
@@ -118,27 +159,30 @@ fieldset {
 }
 
 .button {
-  padding: 0.5rem 1rem;
+margin-top: 3rem;
+  padding: 1rem 3rem;
   font-size: 1rem;
-  border-radius: 4px;
+  font-weight: bold;
+  border-radius: 16px;
   border: none;
-  background-color: #147b73;
-  color: #d9e2f1;
+  background-color: #E7473C;
+  color: #F0F0F0;
   cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
-  background-color: #319890;
+  background-color: #d33529;
 }
 
 .button-flat {
   background-color: transparent;
-  color: #9cbaba;
+  color:rgb(55, 54, 54);
+  font-weight: 500;
 }
 
 .button-flat:hover,
 .button-flat:focus {
   background-color: transparent;
-  color: #869999;
+  color: #951b13;
 }

@@ -23,7 +23,7 @@ export function useInput(defaultValue, validationFn) {
     value: enteredValue,
     handleInputChange,
     handleOnBlur,
-    hasError: didEdit && !valueIsValid,
+    hasError: enteredValue && didEdit && !valueIsValid,
     handleReset
   };
 }
