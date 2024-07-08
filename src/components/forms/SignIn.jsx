@@ -1,7 +1,7 @@
 import { useInput } from "../hooks/useInput";
 import { isEmailOK, isPasswordOK } from "./Validation";
 import Input from "./Input.jsx";
-import "./Input.css";
+import "./SignIn.css";
 export default function LogIn() {
   const {
     value: emailValue,
