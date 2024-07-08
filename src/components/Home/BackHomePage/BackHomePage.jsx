@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../../Cards/Card';
+import Card from '../../cards/Card';
 import './BackHomePage.css';
 
 export default function BackHomePage() {
