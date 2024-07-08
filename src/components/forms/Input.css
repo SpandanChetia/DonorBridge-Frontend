@@ -4,14 +4,17 @@
   box-sizing: border-box;
 }
 
+
+
 .sign-in-container{
+    height: 100vh;
     display: flex;
     flex-direction: row;
     margin: 0;
     font-family: 'Lato', serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #f0f0f0;
+    background-color: #E7473C;
     color: #E7473C;
     min-height: 100vh;
     font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
@@ -34,6 +37,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    height: 100vh;
     width: 41rem;
     background-color: #E7473C;
     color : #f0f0f0
@@ -55,7 +59,8 @@
 .sign-in-form-container{
     color:rgb(55, 54, 54);
     width:80rem;
-    
+    background-color: #f0f0f0;
+    border-top-left-radius: 5% 8%;
 }
 
 .form-section{
@@ -67,7 +72,6 @@
 .form-section h3{
     margin-top: 10.2rem;
     font-weight: 100;
-    border-radius: 60px 0 0 0;
 }
 form {
     display: flex;
