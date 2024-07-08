@@ -2,12 +2,13 @@ import React from "react";
 import Navbar from "./components/navbar/Navbar";
 import FrontHomePage from "./components/Home/frontHomePage/FrontHomePage";
 import BackHomePage from "./components/Home/backHomePage/BackHomePage";
-import LogIn from "./components/forms/LogIn";
+import SignIn from "./components/forms/SignIn";
+import Categories from "./components/categories/Categories";
 
 function App() {
   return (
     <>
-      <LogIn/>
+      <SignIn/>
     </>
   );
 }
