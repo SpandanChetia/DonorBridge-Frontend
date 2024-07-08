@@ -1,34 +1,33 @@
-import { useState } from "react"
 import { useInput } from "../hooks/useInput";
+import { isEmailOK, isPasswordOK } from "./Validation";
+import Input from "./Input.jsx";
+import './Input.css'
 export default function LogIn() {
 
     const {
         value : emailValue,
         handleInputChange : handleEmailChange,
         handleOnBlur : handleEmailBlur,
-        hasError : EmailError
-    } = useInput('', emailisValid);
+        hasError : EmailError,
+        handleReset : resetEmail
+    } = useInput('', isEmailOK);
 
     const {
         value : passwordValue,
         handleInputChange : handlePasswordChange,
         handleOnBlur : handlePasswordBlur,
-        hasError : PasswordError
-    } = useInput('', passwordisValid);
+        hasError : PasswordError,
+        handleReset : resetPassword
+    } = useInput('', isPasswordOK);
 
     const handleSubmit = (event)=>{
         event.preventDefault();
     };
-
-    const emailisValid = (email) =>{
-        const emailRegax = /^[a-zA-Z]+@[a-zA-Z0-9]+$/;
-        return emailRegax.test(email)
-    };
-
-    const passwordisValid = (password) =>{
-        return password.length >= 8;
-    };
     
+    const Resetdata = () =>{
+        resetEmail();
+        resetPassword();
+    }
     return (
         <form>
             <div className="control-row">
@@ -51,11 +50,10 @@ export default function LogIn() {
                     error = {PasswordError}
                 />
             </div>
-
-            <p className="form-actions">
-                <button className="button button-flat">Reset</button>
-                <button className="button" onClick={handleSubmit}>Login</button>
-            </p>
+            <div className="form-actions">
+                <button type="reset" className="button button-flat" onClick={Resetdata}>Reset</button>
+                <button type="submit" className="button" onClick={handleSubmit}>Login</button>
+            </div>
         </form>
     )
 }
