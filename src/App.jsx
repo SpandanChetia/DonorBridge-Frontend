@@ -1,15 +1,25 @@
 import React from "react";
-import Navbar from "./components/navbar/Navbar";
-import FrontHomePage from "./components/Home/frontHomePage/FrontHomePage";
-import BackHomePage from "./components/Home/backHomePage/BackHomePage";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Layout from "./components/Layout";
 import SignIn from "./components/forms/SignIn";
 import Categories from "./components/categories/Categories";
+import HomePage from "./components/Home/HomePage";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      { path: "/", element: <HomePage /> },
+      { path: "/discover", element: <Categories /> },
+      { path: "/signin", element: <SignIn /> },
+    ],
+  },
+]);
 
 function App() {
   return (
-    <>
-      <SignIn/>
-    </>
+    <RouterProvider router={router}/>
   );
 }
 

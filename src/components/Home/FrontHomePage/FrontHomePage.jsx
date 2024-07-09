@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import Coverpic from './cover-pic.png';
 import './FrontHomePage.css';
 
