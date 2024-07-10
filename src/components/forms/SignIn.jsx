@@ -1,4 +1,5 @@
 import { useInput } from "../hooks/useInput";
+import { Link } from "react-router-dom";
 import { isEmailOK, isPasswordOK } from "./Validation";
 import Input from "./Input.jsx";
 import "./SignIn.css";
@@ -30,8 +31,9 @@ export default function LogIn() {
   return (
     <div className="sign-in-container">
       <div className="sideheader-sign-in">
-        <h3>Welcome back</h3>
+        <h3>Welcome back :)</h3>
         <h1>Sign in to BrightFund !</h1>
+        <Link to=".."><button className="button-flat-back">Back</button></Link>
       </div>
       <section className="sign-in-form-container">
         <header className="sign-in-header">

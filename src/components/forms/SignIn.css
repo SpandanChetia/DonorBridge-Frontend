@@ -4,80 +4,78 @@
   box-sizing: border-box;
 }
 
-
-
-.sign-in-container{
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    font-family: 'Lato', serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: #E7473C;
-    color: #E7473C;
-    min-height: 100vh;
-    font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
-    font-feature-settings: "liga", "ss08";
+.sign-in-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  font-family: "Lato", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e7473c;
+  color: #e7473c;
+  min-height: 100vh;
+  font-family: "CircularXXWeb", Trebuchet, Helvetica, Arial, sans-serif;
+  font-feature-settings: "liga", "ss08";
 }
 
 .sign-in-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    height:5rem;
-    padding-right: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 5rem;
+  padding-right: 4rem;
 }
 
-.sign-in-header p{
-    font-weight: 50;
-    color: #303232;
+.sign-in-header p {
+  font-weight: 50;
+  color: #303232;
 }
-.sideheader-sign-in{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100vh;
-    width: 41rem;
-    background-color: #E7473C;
-    color : #f0f0f0
-}   
+.sideheader-sign-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 41rem;
+  background-color: #e7473c;
+  color: #f0f0f0;
+}
 
-.sideheader-sign-in h3 { 
-    padding-top: 11.6rem;
-    padding-left: 3rem;
-    font-size: 1.1rem;
-    font-weight: 100;
+.sideheader-sign-in h3 {
+  padding-top: 11.6rem;
+  padding-left: 3rem;
+  font-size: 1.1rem;
+  font-weight: 100;
 }
 .sideheader-sign-in h1 {
-    padding-top: 2rem;
-    padding-left: 3rem;
-    font-size: 2.4rem;
-    font-weight: 100;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  font-size: 2.4rem;
+  font-weight: 100;
 }
 
-.sign-in-form-container{
-    color:rgb(55, 54, 54);
-    width:80rem;
-    background-color: #f0f0f0;
-    border-top-left-radius: 5% 8%;
+.sign-in-form-container {
+  color: rgb(55, 54, 54);
+  width: 80rem;
+  background-color: #f0f0f0;
+  border-top-left-radius: 5% 8%;
 }
 
-.form-section{
-    display: flex;
-    flex-direction: column;
-    padding-left: 9rem;
+.form-section {
+  display: flex;
+  flex-direction: column;
+  padding-left: 9rem;
 }
 
-.form-section h3{
-    margin-top: 10.2rem;
-    font-weight: 100;
+.form-section h3 {
+  margin-top: 10.2rem;
+  font-weight: 100;
 }
 form {
-    display: flex;
-    flex-direction: column;
-    width: 82%;
-    padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 82%;
+  padding-top: 3rem;
 }
 
 .control,
@@ -93,7 +91,7 @@ fieldset {
   display: block;
   font-size: 0.8rem;
   margin-bottom: 0.2rem;
-  color: #E7473C;
+  color: #e7473c;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -104,7 +102,7 @@ fieldset {
   padding: 0.9rem;
   font-size: 1rem;
   border-radius: 13px;
-  border: 1px solid #E7473C;
+  border: 1px solid #e7473c;
   background-color: #f0f0f0;
   color: #142020;
 }
@@ -153,8 +151,8 @@ fieldset {
 }
 
 .error-icon {
-    margin-left: 10px;
-    padding-right: 10px;
+  margin-left: 10px;
+  padding-right: 10px;
 }
 .form-actions {
   display: flex;
@@ -163,14 +161,14 @@ fieldset {
 }
 
 .button {
-margin-top: 3rem;
+  margin-top: 3rem;
   padding: 1rem 3rem;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 16px;
   border: none;
-  background-color: #E7473C;
-  color: #F0F0F0;
+  background-color: #e7473c;
+  color: #f0f0f0;
   cursor: pointer;
 }
 
@@ -181,7 +179,7 @@ margin-top: 3rem;
 
 .button-flat {
   background-color: transparent;
-  color:rgb(55, 54, 54);
+  color: rgb(55, 54, 54);
   font-weight: 500;
 }
 
@@ -189,4 +187,19 @@ margin-top: 3rem;
 .button-flat:focus {
   background-color: transparent;
   color: #951b13;
+}
+
+.button-flat-back {
+  margin-top: 3rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 16px;
+  border: none;
+  color: #e7473c;
+  cursor: pointer;
+  font-weight: 500;
+  width: fit-content;
+  margin-left: 3rem;
+  background-color: #f0f0f0;
 }

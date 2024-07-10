@@ -1,14 +1,17 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "./navbar/Navbar";
 
-const Layout = () =>{
+const Layout = () => {
+    const location = useLocation();
+    const isSignInPage = location.pathname === "/signin";
+
     return (
         <>
-            <Navbar />
+            {!isSignInPage && <Navbar />}
             <Outlet />
         </>
-    )
-}
+    );
+};
 
 export default Layout;

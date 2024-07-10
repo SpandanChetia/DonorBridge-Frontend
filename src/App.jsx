@@ -4,15 +4,17 @@ import Layout from "./components/Layout";
 import SignIn from "./components/forms/SignIn";
 import Categories from "./components/categories/Categories";
 import HomePage from "./components/Home/HomePage";
+import ErrorPage from "./components/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
+    errorElement: <ErrorPage/>,
     children: [
-      { path: "/", element: <HomePage /> },
-      { path: "/discover", element: <Categories /> },
-      { path: "/signin", element: <SignIn /> },
+      { index: true, element: <HomePage /> },
+      { path: "discover", element: <Categories /> },
+      { path: "signin", element: <SignIn /> },
     ],
   },
 ]);
