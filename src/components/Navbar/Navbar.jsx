@@ -16,7 +16,7 @@ export default function Navbar() {
       <nav className={styles.navbar}>
         <ul>
           <li key="home">
-            <button className={styles.logo}>BRIGHTFUND</button>
+            <Link to='/'><button className={styles.logo}>BRIGHTFUND</button></Link>
           </li>
           <li key="donate">
             <button

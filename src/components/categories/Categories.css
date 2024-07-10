@@ -5,13 +5,14 @@
     flex-direction: column;
     font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
     font-feature-settings: "liga", "ss08";
-    height: 420.875px;
+    height: 95vh;
     line-height: 24px;
     padding-bottom: 64px;
-    padding-top: 64px;
+    padding-top: 13.5rem;
     tab-size: 4;
     text-size-adjust: 100%;
     background-color: #F0F0F0;
+    border-bottom: 1px solid #41403f63;
 }
 
 .category-header h1 {

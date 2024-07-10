@@ -1,0 +1,128 @@
+.categorydetails {
+    background-color: #f0f0f0;
+    width: 100vw;
+    font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
+}
+
+.fundraiserListHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 90vh;
+    width: 100vw;
+    border-bottom: 1px solid #41403f63;
+
+}
+
+.fundraiserListContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5rem;
+    padding-left: 12rem;
+    flex-wrap: wrap;
+    color: rgb(68, 65, 65);
+}
+
+.header1 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+    flex-wrap: wrap;
+    tab-size: 4;
+    text-size-adjust: 100%;
+    width: 60%;
+    height: 100%;
+    padding-top: 13.5rem;
+}
+
+.header1 h1 {
+    border-top-width: 0px;
+    box-sizing: border-box;
+    color: #E7473C;
+    display: block;
+    font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
+    font-size: 350%;
+    font-weight: 500;
+    line-height: 67px;
+    margin-block-end: 24px;
+    padding-left: 12rem;
+    tab-size: 4;
+    text-size-adjust: 100%; 
+}
+
+.header1 p {
+    box-sizing: border-box;
+    color: #e7473cb5;
+    display: inline;
+    font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
+    font-feature-settings: "liga", "ss08";
+    font-size: 23.3991px;
+    height: auto;
+    line-height: 33px;
+    padding-left: 12rem;
+    tab-size: 4;
+    text-size-adjust: 100%;
+}
+
+.header2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+}
+.header2 img {
+    height: 28rem;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 25px;
+    margin-top: 4rem;
+    margin-right: 10rem;
+}
+
+.fund-button {
+    align-items: center;
+    appearance: none;
+    background-color: #E7473C;
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-style: solid;
+    border-bottom-width: 0.8px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-left-style: solid;
+    border-left-width: 0.8px;
+    border-right-color: rgba(0, 0, 0, 0);
+    border-right-style: solid;
+    border-right-width: 0.8px;
+    border-top-color: rgba(0, 0, 0, 0);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-top-style: solid;
+    border-top-width: 0.8px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
+    font-feature-settings: "liga", "ss08";
+    font-size: 16px;
+    font-weight: 700;
+    height: 48px;
+    justify-content: center;
+    line-height: 16px;
+    margin-left: 12rem;
+    margin-top: 2.5rem;
+    min-height: 48px;
+    max-width: 12rem;
+    tab-size: 4;
+}

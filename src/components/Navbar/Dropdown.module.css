@@ -1,4 +1,6 @@
 .dropmenu{
+    display: flex;
+    flex-direction: column;
     width: 10rem;
     position: absolute;
     list-style: none;

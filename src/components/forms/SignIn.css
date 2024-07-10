@@ -38,6 +38,8 @@
   height: 100vh;
   width: 41rem;
   background-color: #e7473c;
+  /* Apply a linear gradient from blue to green */
+  /*background: linear-gradient(to right, blue, green);*/
   color: #f0f0f0;
 }
 
