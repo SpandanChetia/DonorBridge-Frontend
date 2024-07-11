@@ -8,21 +8,21 @@ export default function BackHomePage() {
             <section className="backpage-container">
                 <section className="card-container">
                     <Card
-                        title="Card 1"
+                        title="Raise a Fundraiser for Yourself"
                         content="This is the content of card 1."
                         imageSrc="" 
                         classname="card1"
                     />
                     <Card
-                        title="Card 2"
+                        title="Raise a Fundraiser for your friends"
                         content="This is the content of card 2."
                         imageSrc="" 
                         classname="card1"
                     />
                     <Card
-                        title="Card 3"
+                        title="Raise a Fundraiser for a charity"
                         content="This is the content of card 3."
-                        imageSrc="" 
+                        imageSrc="./img/correct.jpg" 
                         classname="card1"
                     />
                 </section>

@@ -20,6 +20,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    background-color: #E7473C;
 }
 
 .frontpage-photo {
@@ -39,6 +40,7 @@ body {
     width: 100%;
     height: 100%;
     background: linear-gradient(185deg, rgba(231, 71, 60, 0.4), rgba(0, 0, 0, 0.3));
+    z-index: 3;
 }
 
 .frontpage-photo img {
@@ -54,19 +56,21 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    z-index: 1; 
+    z-index: 4; 
 }
 
 .desc1 {
     display: block;
     font-size: 3rem;
     margin-bottom: 1rem;
+    z-index: 4;
 }
 
 .desc2 {
     display: block;
     font-size: 4.5rem;
     margin-bottom: 1rem;
+    z-index: 4;
 }
 
 .fund-button {
@@ -83,7 +87,7 @@ body {
     cursor: pointer;
     box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
-    z-index: 1;
+    z-index: 4;
 }
 
 .fund-button:hover {

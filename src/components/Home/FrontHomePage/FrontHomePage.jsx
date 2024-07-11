@@ -5,7 +5,6 @@ export default function FrontHomePage() {
   return (
     <>
       <section className="main-cover-container">
-        <span className="frontpage-photo"><img src={Coverpic} alt="cover-photo"/></span>
         <div className="frontpage-desc">
           <span className="desc1">A Crowdfunding Platform</span>
           <span className="desc2">Help the People in Need</span>

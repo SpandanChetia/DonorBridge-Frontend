@@ -10,16 +10,16 @@ import sportImage from "./img/sport-image.png";
 import familyImage from "./img/family-image.jpg";
 
 const CATEGORIES = [
-  { id: "Medical", title: "Medical", imageSrc: medicalImage },
-  { id: "Emergency", title: "Emergency", imageSrc: emergencyImage },
-  { id: "Education", title: "Education", imageSrc: educationImage },
-  { id: "Animal", title: "Animal", imageSrc: animalImage},
-  { id: "Environment", title: "Environment", imageSrc: environmentImage },
-  { id: "Business", title: "Business", imageSrc: businessImage },
-  { id: "Community", title: "Community", imageSrc: communityImage },
-  { id: "Event", title: "Event", imageSrc: eventImage },
-  { id: "Sport", title: "Sport", imageSrc: sportImage },
-  { id: "Family", title: "Family", imageSrc: familyImage },
+  { id: "medical", title: "Medical", imageSrc: medicalImage },
+  { id: "emergency", title: "Emergency", imageSrc: emergencyImage },
+  { id: "education", title: "Education", imageSrc: educationImage },
+  { id: "animal", title: "Animal", imageSrc: animalImage},
+  { id: "environment", title: "Environment", imageSrc: environmentImage },
+  { id: "business", title: "Business", imageSrc: businessImage },
+  { id: "community", title: "Community", imageSrc: communityImage },
+  { id: "event", title: "Event", imageSrc: eventImage },
+  { id: "sport", title: "Sport", imageSrc: sportImage },
+  { id: "family", title: "Family", imageSrc: familyImage },
 ];
 
 export default CATEGORIES;
