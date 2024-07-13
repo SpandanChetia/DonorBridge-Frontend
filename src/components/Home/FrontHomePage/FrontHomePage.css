@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Optionally define a CSS variable for convenience */
+:root {
+  --primary-font-family: 'Inter', sans-serif; /* Define variable for convenience */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,9 +25,12 @@ body {
 .main-cover-container {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
     overflow: hidden;
-    background-color: #E7473C;
+    color: #E7473C;
+    background-color: #F0F0F0;
+    border-bottom: 1px solid #41403f63;
+    font-family: var(--primary-font-family);
 }
 
 .frontpage-photo {
@@ -51,26 +61,34 @@ body {
 
 .frontpage-desc {
     position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding-top: 14rem;
+    width: 100%;
     text-align: center;
-    color: white;
+    color: #E7473C;
     z-index: 4; 
 }
 
 .desc1 {
     display: block;
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
+    line-height: 2rem;
     z-index: 4;
 }
 
 .desc2 {
     display: block;
-    font-size: 4.5rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
     z-index: 4;
+}
+
+.frontpage-desc p{
+    position: absolute;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    color: #E7473C;
 }
 
 .fund-button {
@@ -81,11 +99,11 @@ body {
     padding: 0.9rem 2rem;
     font-size: 1.2rem;
     background-color: #F0F0F0;
-    color: #262223; 
+    color: #504DED; 
     border: none;
     border-radius: 1rem;
     cursor: pointer;
-    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.2rem 0.4rem rgba(80, 77, 237, 0.5);
     transition: background-color 0.3s ease;
     z-index: 4;
 }
@@ -93,3 +111,92 @@ body {
 .fund-button:hover {
     background-color: #F0F0F0; 
 }
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    background: white;
+    filter: blur(10px) contrast(15);
+  }
+  
+  .wrapper span {
+    background: black;
+    position: absolute;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .wrapper p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .wrapper p:nth-child(1) {
+    position: absolute;
+    animation: skewing-child .2s ease-in-out infinite alternate;
+  }
+  
+  .wrapper p:nth-child(1) span {
+    width: 50px;
+    height: 50px;
+    margin: -25px;
+    animation: moving 2s cubic-bezier(.97, .01, .12, .99) infinite alternate;
+  }
+  
+  .wrapper p:nth-child(2) {
+    position: absolute;
+    animation: squishing 1s ease-in-out infinite alternate;
+  }
+  
+  .wrapper p:nth-child(2) span {
+    width: 120px;
+    height: 120px;
+    top: 50%;
+    left: 50%;
+    margin: -60px;
+    animation: skewing 2s 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes skewing {
+    0% { transform: skewX(6deg); }
+    10% { transform: skewX(-6deg); }
+    20% { transform: skewX(4deg); }
+    30% { transform: skewX(-4deg); }
+    40% { transform: skewX(2deg); }
+    50% { transform: skewX(-6deg); }
+    55% { transform: skewX(6deg); }
+    60% { transform: skewX(-5deg); }
+    65% { transform: skewX(5deg); }
+    70% { transform: skewX(-4deg); }
+    75% { transform: skewX(4deg); }
+    80% { transform: skewX(-3deg); } 
+    85% { transform: skewX(3deg); }
+    90% { transform: skewX(-2deg); } 
+    95% { transform: skewX(2deg); }
+    100% { transform: skewX(1deg); }
+  }
+  
+  @keyframes skewing-child {
+    0% { transform: skewX(-10deg); }
+    100% { transform: skewX(10deg); }
+  }
+  
+  @keyframes moving {
+    0% { transform: translate(-200px); }
+    30% { transform: translate(-45px); } 
+    70% { transform: translate(45px); }
+    100% { transform: translate(200px); }
+  }
+  
+  @keyframes squishing {
+    10%, 40%, 80% { transform: scale(1, .9); }
+    0%, 30%, 60%, 100% { transform: scale(.9, 1); }
+  }
+  

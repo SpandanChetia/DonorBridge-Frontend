@@ -1,4 +1,9 @@
-/* Categories.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Optionally define a CSS variable for convenience */
+:root {
+  --primary-font-family: 'Inter', sans-serif; /* Define variable for convenience */
+}
 
 .categoryMainContainer {
     background-color: #f0f0f0;
@@ -8,12 +13,12 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
+    font-family: var(--primary-font-family);
     font-feature-settings: "liga", "ss08";
     height: 95vh;
     line-height: 24px;
     padding-bottom: 64px;
-    padding-top: 13.5rem;
+    padding-top: 13rem;
     tab-size: 4;
     text-size-adjust: 100%;
     background-color: #f0f0f0;
@@ -22,9 +27,9 @@
   
   .categoryHeader h1 {
     box-sizing: border-box;
-    color: #e7473c;
+    color: #E7473C;
     display: block;
-    font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
+    font-family: var(--primary-font-family);
     font-feature-settings: "liga", "ss08";
     font-size: 76.892px;
     font-weight: 400;
@@ -39,9 +44,9 @@
   
   .categoryHeader p {
     box-sizing: border-box;
-    color: #e7473cb5;
+    color: #E7473C;
     display: inline;
-    font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
+    font-family: var(--primary-font-family);
     font-feature-settings: "liga", "ss08";
     font-size: 23.3991px;
     height: auto;
@@ -53,22 +58,19 @@
   
   .categoryFundButton {
     align-items: center;
-    background-color: #e7473c;
-    border-bottom-color: rgba(0, 0, 0, 0);
+    background-color: #7876f8;
     border-radius: 12px;
     border-style: solid;
     border-width: 0.8px;
+    border: none;
     border-image-slice: 100%;
     border-image-width: 1;
-    border-left-color: rgba(0, 0, 0, 0);
     border-left-width: 0.8px;
-    border-right-color: rgba(0, 0, 0, 0);
-    border-top-color: rgba(0, 0, 0, 0);
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
     display: inline-flex;
-    font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
+    font-family: var(--primary-font-family);
     font-feature-settings: "liga", "ss08";
     font-size: 16px;
     font-weight: 700;
@@ -79,9 +81,13 @@
     margin-top: 4rem;
     min-height: 48px;
     max-width: 12rem;
-    tab-size: 4;
+    transition: 0.1s ease;
   }
   
+  .categoryFundButton:hover{
+    background-color: #6764e2;
+    box-shadow: 0 0.2rem 0.4rem rgba(188, 234, 223, 1);
+  }
   .categoryMid {
     display: flex;
     flex-wrap: wrap;
@@ -94,7 +100,7 @@
   
   .categoryList{
     margin: 2rem auto;
-    width: 79%;
+    width: 86.9%;
   }
 
   .categoryItem {
@@ -105,7 +111,7 @@
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: inline-block;
-    font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
+    font-family: var(--primary-font-family);
     margin-top: 20px;
     margin-right: 20px;
   }

@@ -1,30 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Optionally define a CSS variable for convenience */
+:root {
+  --primary-font-family: 'Inter', sans-serif; /* Define variable for convenience */
+}
+
 .navbar {
     position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 2rem;
-    width: 70%;
-    height: 3rem;
+    padding-top: 1.7rem;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 30px; 
     z-index: 10; 
-    background-color: #F0F0F0;
-    opacity: 1;
+    background-color: rgba(240, 240, 240, 0.3);
+    backdrop-filter: blur(10px);
+    opacity: 1; 
+    border-bottom: 1px solid #41403f63;
 }
 
 .navbar ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: row;
 }
 
 .navbar li {
     margin: 0 1rem;
+    font-family: var(--primary-font-family);
+    padding-bottom: 0.4rem;
 }
 
 .logo {
@@ -33,17 +36,21 @@
     border: none;
     padding: 0.5rem 1rem;
     border: none;
+    color:#7876f8;
 }
 
 .button {
-    padding: 0.8rem 1rem;
+    padding: 0.6rem 1rem;
     font-size: 1rem;
-    color: #262223;
+    color: #353132;
     border: none;
-    border-radius: 4px;
+    border-radius: 45px;
     cursor: pointer;
+    border: 1px solid #E7473C;
+    transition: 0.1s ease;
 }
 
 .button:hover {
-    background-color: #F0F0F0;
+    background-color: #A1EBDE;
+    border: 1px solid #f0f0f0;
 }

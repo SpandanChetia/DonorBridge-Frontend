@@ -41,7 +41,7 @@
 .header1 h1 {
     border-top-width: 0px;
     box-sizing: border-box;
-    color: #E7473C;
+    color: #FE705D;
     display: block;
     font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
     font-size: 350%;
@@ -87,7 +87,7 @@
 .fund-button {
     align-items: center;
     appearance: none;
-    background-color: #E7473C;
+    background-color: #6B59CD;
     border-bottom-color: rgba(0, 0, 0, 0);
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
