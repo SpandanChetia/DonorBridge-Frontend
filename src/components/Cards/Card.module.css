@@ -1,29 +1,32 @@
 .card1 {
     width: 23rem;
     height: 23rem; 
-    border: 1px solid #f0f0f0;
+    border: 0.1px solid #29134D;
     padding: 3rem;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(27, 61, 175, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #F0F0F0; 
+    background-color: #110B22; 
+    transition: 0.4s ease;
+    cursor: pointer;
+    display: inline-block;
+    color: #E7E6E8;
 }
 
 .card2 {
     width: 15rem;
     height: 15rem; 
-    border: 1px solid #f0f0f0;
+    border: 0.1px solid #29134D;
     padding: 3rem;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #F0F0F0; 
+    background-color: #110B22; 
+    color: #E7E6E8;
 }
 
 .card-image {
@@ -32,4 +35,8 @@
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     margin-bottom: 15px; 
+}
+
+.card1:hover, .card2:hover{
+    background-color: #181033; 
 }

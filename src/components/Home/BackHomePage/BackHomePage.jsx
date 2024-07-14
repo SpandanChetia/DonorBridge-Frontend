@@ -27,7 +27,7 @@ export default function BackHomePage() {
                     />
                 </section>
                 <section className="description-container">
-                    <h1>Fundraising on BrightFund is simple, impactful, and reliable.</h1>
+                    <h1>Fundraising on BrightFund is <br/> <span className="subhead">simple, impactful, and reliable.</span></h1>
                     <p>Get the support you need to make your fundraiser a success on BrightFund, 
                     whether you are raising money for yourself, friends, family, or a cause you care about. With no fee to start, 
                     BrightFund stands as the premier crowdfunding platform—from commemorative events and funerals to urgent medical

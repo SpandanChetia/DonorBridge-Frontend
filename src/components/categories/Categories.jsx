@@ -9,7 +9,7 @@ export default function Categories() {
       <section className={styles.categoryHeader}>
         <h1>
           Discover fundraisers <br />
-          by category.
+          by <span className={styles.subheadcategory}>category.</span>
         </h1>
         <p>
           People around the world are raising money for what they are

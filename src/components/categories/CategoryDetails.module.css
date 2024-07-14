@@ -41,7 +41,6 @@
 .header1 h1 {
     border-top-width: 0px;
     box-sizing: border-box;
-    color: #FE705D;
     display: block;
     font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
     font-size: 350%;
@@ -55,7 +54,6 @@
 
 .header1 p {
     box-sizing: border-box;
-    color: #e7473cb5;
     display: inline;
     font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
     font-feature-settings: "liga", "ss08";

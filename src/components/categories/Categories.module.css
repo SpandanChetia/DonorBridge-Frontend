@@ -21,13 +21,13 @@
     padding-top: 13rem;
     tab-size: 4;
     text-size-adjust: 100%;
-    background-color: #f0f0f0;
+    background: linear-gradient(180deg, #110729, #080411);
     border-bottom: 1px solid #41403f63;
+    color: #E7E6E8; 
   }
   
   .categoryHeader h1 {
     box-sizing: border-box;
-    color: #E7473C;
     display: block;
     font-family: var(--primary-font-family);
     font-feature-settings: "liga", "ss08";
@@ -44,7 +44,7 @@
   
   .categoryHeader p {
     box-sizing: border-box;
-    color: #E7473C;
+    color: #b6b5b8;
     display: inline;
     font-family: var(--primary-font-family);
     font-feature-settings: "liga", "ss08";
@@ -56,9 +56,15 @@
     text-size-adjust: 100%;
   }
   
+  .subheadcategory{
+    background: linear-gradient(to right, #dcd0f5, #9775e0, #dcd0f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
   .categoryFundButton {
     align-items: center;
-    background-color: #7876f8;
+    background-color: #6F41D2;
     border-radius: 12px;
     border-style: solid;
     border-width: 0.8px;
@@ -86,14 +92,13 @@
   
   .categoryFundButton:hover{
     background-color: #6764e2;
-    box-shadow: 0 0.2rem 0.4rem rgba(188, 234, 223, 1);
   }
   .categoryMid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #080411;
     list-style: none;
     width: 100%;
   }

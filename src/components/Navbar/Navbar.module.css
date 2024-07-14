@@ -1,21 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
-/* Optionally define a CSS variable for convenience */
-:root {
-  --primary-font-family: 'Inter', sans-serif; /* Define variable for convenience */
-}
-
 .navbar {
     position: fixed;
-    padding-top: 1.7rem;
+    padding-top: 1rem;
+    align-items: center;
     width: 100%;
     display: flex;
     justify-content: center;
     z-index: 10; 
-    background-color: rgba(240, 240, 240, 0.3);
+    background-color: rgb(17, 7, 41, 0.2);
     backdrop-filter: blur(10px);
-    opacity: 1; 
-    border-bottom: 1px solid #41403f63;
+    border-bottom: 1px solid #4b2f8863;
 }
 
 .navbar ul {
@@ -27,30 +20,29 @@
 .navbar li {
     margin: 0 1rem;
     font-family: var(--primary-font-family);
-    padding-bottom: 0.4rem;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 0.95rem;
     border: none;
-    padding: 0.5rem 1rem;
-    border: none;
-    color:#7876f8;
+    padding: 0.8rem 0.8rem;
+    color:#E7E6E8;
+    background: none;
+    cursor: pointer;
 }
 
 .button {
-    padding: 0.6rem 1rem;
-    font-size: 1rem;
-    color: #353132;
+    padding: 0.8rem 0.8rem;
+    font-size: 0.95rem;
+    color: #E7E6E8;
     border: none;
     border-radius: 45px;
     cursor: pointer;
-    border: 1px solid #E7473C;
     transition: 0.1s ease;
+    background: none;
 }
 
 .button:hover {
-    background-color: #A1EBDE;
-    border: 1px solid #f0f0f0;
+    color: #b6b5b8;
+    background: none;
 }

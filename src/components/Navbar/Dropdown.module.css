@@ -3,12 +3,13 @@
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
-    height: 7.5rem;
+    min-height: 120px;
     width: 21%;
     position: absolute;
     list-style: none;
     padding-top: 10px;
-    background-color: #F0F0F0;
+    background-color: #191133;
+    border-radius: 10px;
 }
 
 .dropmenu li{
@@ -20,18 +21,17 @@
     width: 100%;
     height: 100%;
     text-decoration: none;
-    color: #E7473C;
+    color: #E7E6E8;
     font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
 }
 
 .dropmenuitems h3{
-    color: rgb(24, 24, 24);
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 100;
     padding-top: 0.4rem;
 }
 .dropmenuitems p{
-    color: rgb(24, 24, 24);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     padding-top: 0.2rem;
+    color: #b6b5b8;
 }
