@@ -1,7 +1,7 @@
 .hero {
-    background: linear-gradient(180deg, #110729, #080411 45%);
-    display: flex;
-    justify-content: center;
+  background: linear-gradient(180deg, #110729, #080411 45%);
+  display: flex;
+  justify-content: center;
 }
 
 .signupContainer {
@@ -16,53 +16,53 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.signupContainer h2 {
+  }
+  
+  h2 {
     margin-top: 1rem;
     text-align: center;
     color: #333;
     font-size: 1.5rem;
     font-weight: 600;
-}
-
-.signupForm {
+  }
+  
+  .signupForm {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.signupForm .formGroup {
+  }
+  
+  .signupForm .formGroup {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.signupForm .formGroup label {
+  }
+  
+  .signupForm .formGroup label {
     width: 100%;
     margin-top: 0.5rem;
     color: #555;
     font-weight: 500;
     text-align: left;
-}
-
-.signupForm .formGroup input {
+  }
+  
+  .signupForm .formGroup input {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
     transition: border-color 0.3s;
-}
-
-.signupForm .formGroup input:focus {
+  }
+  
+  .signupForm .formGroup input:focus {
     border-color: #4e2b98;
     outline: none;
-}
-
-.signupForm button {
+  }
+  
+  .signupForm button {
     margin-top: 1rem;
     width: 100%;
     padding: 12px;
@@ -74,12 +74,13 @@
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s;
-}
-
-.signupForm button:hover {
+  }
+  
+  .signupForm button:hover {
     background-color: #542fa3;
-}
-
-.signupForm button:active {
+  }
+  
+  .signupForm button:active {
     background-color: #004494;
-}
+  }
+  

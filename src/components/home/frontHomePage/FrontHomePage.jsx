@@ -13,16 +13,8 @@ export default function FrontHomePage() {
             Discover impactful fundraisers aimed at making a tangible difference
             in people's lives.
           </p>
-        </div>
         <button className="fund-button">Start a Fundraiser</button>
-        {/*<div class="wrapper">
-          <p>
-            <span></span>
-          </p>
-          <p>
-            <span></span>
-          </p>
-        </div>*/}
+        </div>
       </section>
     </>
   );

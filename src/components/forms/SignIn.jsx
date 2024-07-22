@@ -37,7 +37,7 @@ export default function LogIn() {
       </div>
       <section className="sign-in-form-container">
         <header className="sign-in-header">
-            <p>Don't have an Account? Sign Up</p>
+            <p>Don't have an Account? <Link to="/signup">Sign Up</Link></p>
         </header>
         <section className="form-section">
             <h3>Your account details</h3>

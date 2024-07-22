@@ -4,11 +4,11 @@ import Navbar from "./navbar/Navbar";
 
 const Layout = () => {
     const location = useLocation();
-    const isSignInPage = location.pathname === "/signin";
+    const isdisplay = location.pathname === "/signin" || location.pathname === "/signup";
 
     return (
         <>
-            {!isSignInPage && <Navbar />}
+            {!isdisplay && <Navbar />}
             <Outlet />
         </>
     );

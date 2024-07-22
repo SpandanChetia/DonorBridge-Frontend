@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-/* Optionally define a CSS variable for convenience */
 :root {
-  --primary-font-family: 'Inter', sans-serif; /* Define variable for convenience */
+  --primary-font-family: 'Inter', sans-serif; 
 }
 
 * {
@@ -28,12 +27,13 @@ body {
   align-items: center;
   flex-wrap: wrap;
     width: 100vw;
-    height: 95vh;
+    min-height: 95vh;
+    height: auto;
     overflow: hidden; 
+    padding: 26vh 10%;
     background: linear-gradient(180deg, #110729, #080411 45%);
     border-bottom: 1px solid #41403f63;
     font-family: var(--primary-font-family);
-    /*#1A0941*/
 }
 
 .small-button {
@@ -62,7 +62,6 @@ body {
   text-align: center;
   color: #E7E6E8;
   z-index: 4; 
-  padding-top: 190px;
 }
 
 .desc {
@@ -86,7 +85,7 @@ body {
 
 .fund-button {
   display: block;
-  margin-top: 80px;
+  margin-top: 8vh;
     padding: 0.9rem 2rem;
     font-size: 1.2rem;
     background-color: #6F41D2;
@@ -102,3 +101,20 @@ body {
     background-color: #F0F0F0; 
 }
 
+@media (max-width: 515px) {
+  .desc {
+      font-size: 3rem
+    }
+    .frontpage-desc p{
+      font-size: 1.14rem
+    }
+
+    .small-button {
+      margin-left: 0;
+      padding: 0.5rem 0.5rem;
+      font-size: 0.9rem;
+    }
+    .fund-button {
+      font-size: 1rem;
+    }
+}

@@ -1,42 +1,166 @@
-.card1 {
-    width: 23rem;
-    height: 23rem; 
-    border: 0.1px solid #29134D;
-    padding: 3rem;
-    border-radius: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --primary-font-family: 'Inter', sans-serif; 
+}
+
+body {
+    background-color: #080411;
+    font-family: var(--primary-font-family);
+    margin: 0;
+}
+
+.backpage-container {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #080411;
+    z-index: 2;
+    padding: 0 2rem; /* Add padding to the left and right */
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px; 
+    background-color: #080411;
+    padding: 0 10rem; /* Ensure there's padding on the left and right */
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 1.2em; 
+}
+
+.card p {
+    font-size: 0.9em; 
+    color: #666; 
+}
+
+.description-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #110B22; 
-    transition: 0.4s ease;
-    cursor: pointer;
-    display: inline-block;
-    color: #E7E6E8;
+    text-align: left;
+    background-color: #080411;
+    height: 70vh;
+    font-size: 38.1972px;
+    font-weight: small;
+    padding: 0 2rem; /* Ensure there's padding on the left and right */
 }
 
-.card2 {
-    width: 15rem;
-    height: 15rem; 
-    border: 0.1px solid #29134D;
-    padding: 3rem;
-    border-radius: 10px;
+.description-container h1 {
+    color: #E7E6E8;
+    font-family: var(--primary-font-family);
+    font-feature-settings: "liga", "ss08";
+    font-size: 3.5rem;
+    font-weight: 500;
+    letter-spacing: -0.763944px;
+    line-height: 58px;
+    margin-block-end: 40px;
+    margin-bottom: 40px;
+    margin-top: 4rem;
+    text-size-adjust: 100%;
+}
+
+.subhead {
+    background: linear-gradient(to right, #dcd0f5, #9775e0, #dcd0f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.description-container p {
+    color: #b6b5b8;
+    font-family: 'CircularXXWeb', Trebuchet, Helvetica, Arial, sans-serif;
+    font-feature-settings: "liga", "ss08";
+    font-size: 23.3991px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 35.0986px;
+    margin-block-end: 16px;
+    margin-bottom: 16px;
+    margin-top: 2rem;
+    tab-size: 4;
+    text-size-adjust: 100%;
+}
+
+.advantages-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 3rem; /* Add padding to the left and right */
+    background-color: #080411;
+}
+
+.card1, .card2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
     background-color: #110B22; 
     color: #E7E6E8;
+    border-radius: 10px;
+    min-width: 300px; 
+    max-width: 300px; 
+    height: 320px;
+    transition: background-color 0.4s ease;
+    margin: 4rem;
+    gap: 12px;
+    background: none;
+    line-height: 1.4rem;
 }
 
-.card-image {
-    width: 100%;
-    height: 150px; 
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    margin-bottom: 15px; 
+.card2 p {
+    color: #b6b5b8;
 }
 
-.card1:hover, .card2:hover{
+.card2 h3{
+    font-size: 22px;
+}
+.card1:hover{
     background-color: #181033; 
 }
+
+.number {
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    border: 1px solid #E7E6E8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #110B22;
+    color: #E7E6E8;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.punchline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.punchline h3{
+    padding-top: 20px;
+    padding-left: 15px;
+    font-size: 23px;
+    background: linear-gradient(to right, #dcd0f5, #9775e0, #dcd0f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.punchline img {
+    width: 2.6rem;
+    height: 2.6rem;
+}
+
+@media (max-width: 515px) {
+    .card1, .card2 {
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+  }
